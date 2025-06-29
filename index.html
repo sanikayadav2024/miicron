@@ -70,12 +70,79 @@
         }
 
         /* Banner images with increased height */
-        .carousel-item img {
-            width: 100%;
-            height: 500px;
-            /* Increased height */
-            object-fit: cover;
-        }
+       /* Banner Image Default Height */
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    z-index: 2;
+    bottom: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    color: #eee;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive for Mobile Phones */
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 12%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 16px;
+        padding: 0 8px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+}
+
+
+/* Responsive Banner for Tablets and Mobiles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 220px;
+    }
+}
+
+
 
 
         /* Gradient overlay */
@@ -92,18 +159,7 @@
             bottom: 25%;
         }
 
-        .carousel-caption h3 {
-            font-size: 28px;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .carousel-caption p {
-            font-size: 16px;
-            color: #eee;
-        }
-
+        
         .product-card {
             transition: transform 0.3s;
         }
@@ -174,33 +230,40 @@
     <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/phenolic_resin.jpg" class="d-block w-100" alt="Phenolic Resin">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Phenolic Resins</h3>
+                <img src="images/product1.png" class="d-block w-100" alt="Phenolic Resin">
+                <div class="carousel-caption ">
+                    <h3>Phenol Blocked Polyisocyanates</h3>
                     <p>Reliable solutions for high-performance coatings</p>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <img src="images/pie_resin.jpg" class="d-block w-100" alt="PEI Resin">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>PEI Resin</h3>
+                <img src="images/product2.png" class="d-block w-100" alt="PEI Resin">
+                <div class="carousel-caption">
+                    <h3>Pei Resin</h3>
                     <p>Durable coatings for industrial applications</p>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <img src="images/theic.jpg" class="d-block w-100" alt="THEIC">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>THEIC</h3>
+                <img src="images/product3.png" class="d-block w-100" alt="THEIC">
+                <div class="carousel-caption">
+                    <h3>Phenolic Resin</h3>
                     <p>Excellence in polymer technology</p>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <img src="images/titanates.jpg" class="d-block w-100" alt="Titanates">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/product4.png" class="d-block w-100" alt="Titanates">
+                <div class="carousel-caption">
                     <h3>Titanates</h3>
+                    <p>Advanced chemical solutions for coatings</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/product5.png" class="d-block w-100" alt="Titanates">
+                <div class="carousel-caption">
+                    <h3>Theic</h3>
                     <p>Advanced chemical solutions for coatings</p>
                 </div>
             </div>
@@ -259,7 +322,7 @@
     <section class="container py-5">
         <div data-aos="fade-up">
             <h2 class="mb-4">Welcome to Miicron Wires and Polymers Private Limited</h2>
-            <p >Miicron is an exporter of <span class="bld">Phenol blocked Polyisocyanates, PEI Resins,
+            <p>Miicron is an exporter of <span class="bld">Phenol blocked Polyisocyanates, PEI Resins,
                     Phenolic Resins, Tiatanates & THEIC </span>to European , Asian & other continents.We specialise in
                 raw materials used in the formulation of Varnish, Wire Enamels, Inks, Paints, etc. At Miicron,
                 consistent quality means the world to us. <br><br>
